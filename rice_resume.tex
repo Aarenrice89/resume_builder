@@ -1,0 +1,208 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,9.5pt]{article}
+
+% -----------------------------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{enumitem}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% \definecolor{airforceblue}{RGB}{122, 146, 191}
+\definecolor{airforceblue}{RGB}{153, 172, 207}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.0in}
+
+% -----------------------------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{airforceblue}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+
+\newcommand{\topbannerpad}{\vspace{0.075in}}
+\newcommand{\bottombannerpad}{\vspace{0.04in}}
+\newcommand{\firstbulletpad}{\vspace{-0.005in}}
+
+\newcommand{\itemtick}{\item[\textbf{--}]}
+
+% -----------------------------------------------------------------------------
+
+\begin{document}
+
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\LARGE Aaren Rice}  & 423-946-2025\\
+ &  aaren.rice@gmail.com \\
+ 518 N. Francisca Ave., Apt. A & github.com/aarenrice89\\
+ Redondo Beach, CA 90277 & aarenrice.github.io/\\
+\end{tabular*}
+
+\bottombannerpad
+
+% -----------------------------------------------------------------------------
+
+% \resheading{Summary of Qualifications}
+% \begin{itemize}
+% \resitem{Video stitching tool to automatically concatenate .mp4 videos and upload to Youtube public account}
+% \end{itemize}
+
+% -----------------------------------------------------------------------------
+
+\resheading{Education}\topbannerpad
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{University of South Carolina}  & Columbia, SC \\
+	\textit{Masters of Science in Nuclear Engineering} &  \textit{2013 - 2015} \\
+\end{tabular*}\vspace{0.04in}
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{University of Tennessee}  & Knoxville, TN \\
+	\textit{Bachelor of Science in Nuclear Engineering} &  \textit{2007 - 2012} \\
+\end{tabular*}
+\bottombannerpad
+% -----------------------------------------------------------------------------
+
+\resheading{Work Experience}\topbannerpad
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{The Aerospace Corporation}  & {El Segundo, CA} \\
+	\textit{Senior Systems Engineer - Software Development} &  \textit{2018 - Present} \\
+\end{tabular*}
+% \begin{itemize}\vspace{0in}
+\begin{itemize}\vspace{-0.025in}
+	\itemsep-0.02in
+	\itemtick Project lead for full-stack, custom ETL service to migrate data into ontology-backed standardized data model
+	\itemtick Lead developer for internal Python tool to analyze large NxM Satellite/Ground Terminal RF interference events 
+	\itemtick Develop large-scale, system-of-system tools to perform modeling and  simulation of DoD and NRO space systems
+	% \itemtick Develop and sustain large-scale, system-of-system tools to perform modeling, simulation, and analysis of DoD, NRO, and Commercial space systems
+\end{itemize} 
+\firstbulletpad
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{Savannah River Nuclear Solutions}  & Aiken, SC \\
+	\textit{Criticality Safety Engineer} &  \textit{2017 - 2018} \\
+\end{tabular*}
+% \begin{itemize}\vspace{0in}
+\begin{itemize}\vspace{-0.025in}
+	\itemsep0em
+	\itemtick Modeling and simualtion of process-specific nuclear criticality scenarios to ensure safe processing configurations
+\end{itemize} 
+\vspace{-0.05in}
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textit{Systems Process Engineer} &  \textit{2015 - 2017} \\
+\end{tabular*}
+% \begin{itemize}\vspace{0in}
+\begin{itemize}\vspace{-0.025in}
+	\itemsep0em
+	% \item[--] Managed waste processes in SRS's H-Canyon processing facility to ensure safety and efficiency goals were met.
+	% \item[--] Tracking process parts to ensure appropiate stock based on historic trend data
+	\itemtick Analyzed trends of facility parts inventory to ensure appropiate stock levels were met for continuous processing needs
+\end{itemize}
+\firstbulletpad
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{University of South Carolina}  & Columbia, SC \\
+	\textit{Research Assistant} &  \textit{2013 - 2015} \\
+\end{tabular*}
+% \begin{itemize}\vspace{0in}
+\begin{itemize}\vspace{-0.05in}
+	\itemsep0em
+	\itemtick Developed the South Carolina segment of BISON C++ code to analyze simulations of advanced reactor fuels
+\end{itemize} 
+\firstbulletpad
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{Idaho National Lab}  & Idaho Falls, ID \\
+	\textit{Fuels Performance Modeling and Simulation - Intern} &  \textit{2014} \\
+\end{tabular*}
+% \begin{itemize}\vspace{0in}
+\begin{itemize}\vspace{-0.05in}
+	\itemsep0em
+	\itemtick Validated the BISON nuclear fuel performance code by comparing simulated results with in-reactor experiments
+\end{itemize} 
+\bottombannerpad
+
+
+% -----------------------------------------------------------------------------
+
+\resheading{Projects}\topbannerpad
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{Professional} \\
+\end{tabular*}
+\begin{itemize}\vspace{-0.05in}
+	\itemsep0em
+	\itemtick Project lead for full stack, Python-based ETL service built on frontend React app with Python Flask/Flask-RESTX backend framework served on an Apache VM
+	\begin{itemize}\vspace{-0.06in}
+		\item[-] ETL translators written in Python developed to interface with various sources including: SQL databases, Neo4j databases, Palantir Foundry API, REST services, JSON, XML, Excel, and flat files
+		\item[-] Deployed containerized service to Aerospace internal cloud network on CI/CD pipeline using Jenkins
+	\end{itemize}\vspace{-0.05in}
+	\itemtick Enabled other staff to easily interface with multiple legacy tools written in C by developing Python APIs to wrap underlying libraries or communicate via TCP/IP connection
+	% \itemtick Defined a common interface between SysML descriptive modeling tools and analytical tools increase standardization
+	\itemtick Developed and deployed a web data extraction tool on a disjointed network to centralize feed data for numerous tools
+\end{itemize} 
+\firstbulletpad
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{Personal} \\
+\end{tabular*}
+\begin{itemize}\vspace{-0.05in}
+	\itemsep0em
+	\item[--] Pluralsight's \textit{Building Web Applications with React} course to help solidify understanding of React
+	\item[--] Automated video stitching tool using FFmpeg software and YouTube upload service using Python's googleapiclient
+	% \item[--] Cryptocurrency staking rewards tracking web application
+\end{itemize} 
+\bottombannerpad
+
+% -----------------------------------------------------------------------------
+
+\resheading{Skills}
+% \topbannerpad
+\vspace{-0.15in}
+
+\begin{description}
+	\itemsep0.025in
+	\item[Languages:]
+	Python, JavaScript, Neo4j Cypher, Bash, C{}\verb!#!, SQL, Java
+	\item[Technical Skills:]
+	REST APIs, Object-oriented programming, Linux, Jenkins, Docker, Kubernetes, Rancher, AWS, distributed computing, Neo4j, GraphQL, React, Apache Nifi, LaTeX, JIRA, Kanban
+	\item[Python Packages:]
+	Flask, Flask-RESTX, FastAPI, pytest, unittest, Pandas, Matplotlib, requests
+	\item[Miscellaneous:]
+	VS Code, Postman, Palantir Foundry, Unity
+\end{description}
+% \bottombannerpad
+\vspace{0.025in}
+
+% -----------------------------------------------------------------------------
+
+\resheading{Interests}
+% \topbannerpad
+\vspace{-0.15in}
+
+\begin{description}
+	\itemsep0.025in
+	\item[Outdoors:] Professional beach volleyball, pickleball, hiking with my dogs, fitness enthusiast 
+	\item[Academic:] Continued education, full stack development, cryptocurrency, machine learning, process automation
+\end{description}
+
+\end{document}
+% \bottombannerpad
+
+% -----------------------------------------------------------------------------
