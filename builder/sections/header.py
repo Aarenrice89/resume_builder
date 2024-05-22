@@ -1,5 +1,7 @@
 from dataclasses import dataclass
+
 from builder.sections import BaseTexDataClass
+
 
 @dataclass(kw_only=True)
 class Header(BaseTexDataClass):
