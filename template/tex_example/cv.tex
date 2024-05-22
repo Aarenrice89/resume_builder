@@ -1,0 +1,158 @@
+\documentclass{styling}
+
+\setname{Aaren}{Rice}
+\setaddress{Redondo Beach, CA}
+\setmobile{423-946-2025}
+\setmail{aaren.rice@gmail.com}
+\setlinkedinaccount{https://www.linkedin.com/in/aaren-rice-a57758b0/}
+\setgithubaccount{https://github.com/Aarenrice89}
+\setyearsofexperience{9}
+\setthemecolor{MidnightBlue}
+
+\begin{document}
+%Create header
+\headerview
+\bigskip % white space
+
+%
+\section{Skills}
+    %
+    \vspace{0.25mm}
+    \newcommand{\skillone}{\createskill{Languages}{Python \cpshalf JavaScript \cpshalf TypeScript \cpshalf HTML \cpshalf CSS \cpshalf SQL \cpshalf Bash \cpshalf LaTeX}}
+    \newcommand{\skilltwo}{\createskill{Technologies}{Django \cpshalf REST Framework \cpshalf Docker \cpshalf React.js \cpshalf Celery \cpshalf Redis \cpshalf AWS \cpshalf Git \cpshalf PyTest \cpshalf Tailwind CSS}}
+    \newcommand{\skillthree}{\createskill{Services}{GitLab \cpshalf Jira \cpshalf Confluence \cpshalf NewRelic \cpshalf Snyk \cpshalf Veracode \cpshalf Figma \cpshalf Lucid}}
+    %
+    \createskills{\skillone, \skilltwo, \skillthree}
+
+    \vspace{-2mm}
+    %
+%
+\section{Experience}
+    %
+    \datedexperience{Alteryx}{Aug 2022 - Present}
+    \explanation{Professional Software Engineer}{Irvine, CA}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Designed and implemented an ETL pipeline to ensure synchronization of our Alteryx AnswerAI project with the latest internal datasets by automating the data extraction, generative AI embeddings population, and insertion into existing database.
+
+        % \smallskip
+        % \coloredbullet\ %
+        % Integrated Salesforce case management into Mission Control, customer-facing user portal, enhancing customer support and collaboration for Alteryx product users.
+
+        \smallskip
+        \coloredbullet\ %
+        Developed the Feature Adoption Dashboard (FAD) backend architecture, leveraging telemetry data from Snowflake data warehouse to provide users with insights into product utilization and industry benchmarks.
+
+        \smallskip
+        \coloredbullet\ %
+        % Interface cross-functionally with external team members to understand and collaborate on project requirements, UX/UI design features, and scalable web deployment needs across our diverse portfolio of projects.
+        Collaborate extensively with cross-functional teams to grasp project requirements and use-cases, coordinate on UX/UI design elements, and address scalable web deployment necessities across our diverse project spectrum.
+
+        % \smallskip
+        % \coloredbullet\ %
+        % Led the creation of a user-friendly Technical Support File (TSF) viewing platform after completing the development of an automated data extraction and loading service. Empowered Alteryx employees to standardize TSF file analysis, offering tailored recommendations using Python Django and ReactJS.
+
+        \smallskip
+    }
+     %
+    \datedexperience{The Aerospace Corporation}{Aug 2018 - Aug 2022}
+    \explanation{Senior Systems Engineer - Software Development}{El Segundo, CA}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Project lead for full-stack, custom ETL service to migrate data into ontology-backed standardized data model. Utilizes a Flask/Flask RESTX web framework, Neo4j database backend, and ReactJS-built frontend.
+
+        \smallskip
+        \coloredbullet\ %
+        Lead developer for modeling and simulation tool used to analyze expected availability of satellite constellations on a distributed computing system.
+
+        \smallskip
+        \coloredbullet\ %
+        Lead developer for internal Python tool to analyze large NxM Satellite/Ground Terminal RF interference events.
+
+        \smallskip
+        \coloredbullet\ %
+        Created ReactJS web interface for antenna library to help visualize gain patterns. Utilized Python FastAPI backend framework to help create OpenAPI documentation and expose endpoints to get antenna data.
+
+        \smallskip
+    }
+    %
+    \datedexperience{Savannah River Nuclear Solutions}{Aug 2015 - Jul 2018}
+    \explanation{Criticality Safety Engineer}{Aiken, SC}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Modeling and simulation of process-specific nuclear criticality scenarios to ensure safe processing configurations.
+
+        \bigskip
+    }
+%
+\section{Education}
+    \datedexperience{Master of Science - Nuclear Engineering}{Aug 2013 - May 2015}
+    \explanation{University of South Carolina}{Columbia, SC}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Developed the South Carolina segment of BISON C++ code to analyze simulations of advanced reactor fuels.
+    }
+    \datedexperience{Bachelor of Science - Nuclear Engineering}{Aut 2007 - May 2012}
+    \explanation{University of Tennessee}{Knoxville, TN}
+%
+\section{Notable Projects}
+    %
+    \datedexperience{South Bay Specials}{Apr 2024 - Present}
+    \explanation{Full Stack Developer}{Redondo Beach, CA}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Developing a crowdsourced application to track daily food and drink specials in the South Bay of Los Angeles.
+        \smallskip
+
+
+        \coloredbullet\ %
+        Backend framework developed using the Python Django framework. Using Docker Compose to standardize code architecture and to help streamline the deployment process.
+        \smallskip
+
+
+        \coloredbullet\ %
+        Future plans include to build out a small frontend using ReactJS and deploy to AWS to help further solidify my understanding of their cloud services offered.
+        \smallskip
+    }
+    %
+    \datedexperience{House Hunter}{Jan 2021 - May 2021}
+    \explanation{Full Stack Developer}{Redondo Beach, CA}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Independently built an web application that scrapes MLS housing data meeting filtering criteria to display properties pertinant to my personal interest.
+        \smallskip
+
+
+        \coloredbullet\ %
+        Front and back-end development using the React and FastAPI (Python) frameworks, respectively. These services were containerized using Docker Compose to enable scalability and deployed to Heroku cloud platform.
+        \smallskip
+    }
+    %
+    \datedexperience{FFmpeg API}{Jan 2019 - Mar 2019}
+    \explanation{Developer}{Redondo Beach, CA}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Developed a small Python script to help stitch my chunked GoPro volleyball footage using FFmpeg and upload stitched video to private YouTube account.
+        \smallskip
+
+
+        % \coloredbullet\ %
+        % Allowed me to continue my Python growth while providing automation to a tedious task.
+        \smallskip
+    }
+%
+% \section{Publications}
+% \indent
+% \explanationdetail{
+% \smallskip
+% \coloredbullet\ %
+%  \textbf{John Doe} and FirstName LastName, "Super Awesome Modification for UAV Control Systems," \emph{2020 International Conference on Super Cool Stuff (ICSCS)}, Paris, France.
+%  }
+\end{document}
