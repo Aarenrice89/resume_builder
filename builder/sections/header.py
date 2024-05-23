@@ -15,6 +15,10 @@ class Header(BaseTexDataClass):
     github_url: str
     years_of_experience: int
 
+    @classmethod
+    def from_config(cls, **kwargs) -> "Header":
+        return cls(**kwargs)
+
     def to_tex(self) -> str:
         tex = ""
         tex += f"\setname{{{self.first_name}}}{{{self.last_name}}}\n"

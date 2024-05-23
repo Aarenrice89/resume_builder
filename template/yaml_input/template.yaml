@@ -1,3 +1,5 @@
+Document:
+  theme_color: MidnightBlue
 Header:
   first_name: Aaren
   last_name: Rice
@@ -8,3 +10,115 @@ Header:
   linkedin_url: https://www.linkedin.com/in/aaren-rice-a57758b0/
   github_url: https://github.com/Aarenrice89
   years_of_experience: 9
+Skills:
+  skill_1:
+    name: Languages
+    items:
+      - Python
+      - JavaScript
+      - TypeScript
+      - HTML
+      - CSS
+      - SQL
+      - Bash
+      - LaTeX
+  skill_2:
+    name: Technologies
+    items:
+      - Django
+      - REST Framework
+      - Docker
+      - React.js
+      - Celery
+      - Redis
+      - Git
+      - PyTest
+      - Cypress
+  skill_3:
+    name: Services
+    items:
+      - GitLab
+      - Jira
+      - AWS
+      - Confluence
+      - NewRelic
+      - Snyk
+      - Veracode
+      - Figma
+      - Lucid
+Experience:
+  experience_1:
+    name: Alteryx
+    title: Professional Software Engineer
+    location: Irvine, CA
+    start_date: Aug 2022
+    end_date: Present
+    highlights:
+      - Designed and implemented an ETL pipeline to ensure synchronization of our Alteryx AnswerAI project with the latest internal datasets by automating the data extraction, generative AI embeddings population, and insertion into existing database.
+      - Developed the Feature Adoption Dashboard (FAD) backend architecture, leveraging telemetry data from Snowflake data warehouse to provide users with insights into product utilization and industry benchmarks.
+      - Collaborate extensively with cross-functional teams to grasp project requirements and use-cases, coordinate on UX/UI design elements, and address scalable web deployment necessities across our diverse project spectrum.
+  experience_2:
+    name: The Aerospace Corporation
+    title: Senior Systems Engineer - Software Development
+    location: El Segundo, CA
+    start_date: Aug 2018
+    end_date: Aug 2022
+    highlights:
+      - Project lead for full-stack, custom ETL service to migrate data into ontology-backed standardized data model. Utilizes a Flask/Flask RESTX web framework, Neo4j database backend, and ReactJS-built frontend.
+      - Lead developer for modeling and simulation tool used to analyze expected availability of satellite constellations on a distributed computing system.
+      - Lead developer for internal Python tool to analyze large NxM Satellite/Ground Terminal RF interference events.
+      - Created ReactJS web interface for antenna library to help visualize gain patterns. Utilized Python FastAPI backend framework to help create OpenAPI documentation and expose endpoints to get antenna data.
+  experience_3:
+    name: Savannah River Nuclear Solutions
+    title: Criticality Safety Engineer
+    location: Aiken, SC
+    start_date: Aug 2015
+    end_date: Jul 2018
+    highlights:
+      - Modeling and simulation of process-specific nuclear criticality scenarios to ensure safe processing configurations.
+Education:
+  education_1:
+    name: University of South Carolina
+    location: Columbia, SC
+    degree: Master of Science
+    field: Nuclear Engineering
+    start_date: Aug 2013
+    end_date: May 2015
+    highlights:
+      - Developed the South Carolina segment of BISON C++ code to analyze simulations of advanced reactor fuels.
+  education_2:
+    name: University of Tennessee
+    location: Knoxville, TN
+    degree: Bachelor of Science
+    field: Nuclear Engineering
+    start_date: Aug 2007
+    end_date: May 2012
+    highlights:
+Projects:
+  project_1:
+    name: South Bay Specials
+    role: Full Stack Developer
+    location: Redondo Beach, CA
+    start_date: Apr 2024
+    end_date: Present
+    highlights:
+      - Developing a crowdsourced application to track daily food and drink specials in the South Bay of Los Angeles.
+      - Backend framework developed using the Python Django framework. Using Docker Compose to standardize code architecture and to help streamline the deployment process.
+      - Future plans include to build out a small frontend using ReactJS and deploy to AWS to help further solidify my understanding of their cloud services offered.
+  project_2:
+    name: House Hunter
+    role: Full Stack Developer
+    location: Redondo Beach, CA
+    start_date: Jan 2021
+    end_date: May 2021
+    highlights:
+      - Independently built an web application that scrapes MLS housing data meeting filtering criteria to display properties pertinent to my personal interest.
+      - Front and back-end development using the React and FastAPI (Python) frameworks, respectively. These services were containerized using Docker Compose to enable scalability and deployed to Heroku cloud platform.
+  project_3:
+    name: FFmpeg API
+    role: Full Stack Developer
+    location: Hermosa Beach, CA
+    start_date: Jan 2019
+    end_date: Mar 2019
+    highlights:
+      - Developed a small Python script to help stitch my chunked GoPro volleyball footage using FFmpeg and upload stitched video to private YouTube account.
