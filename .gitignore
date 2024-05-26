@@ -9,6 +9,7 @@
 
 # Project specific
 outputs/*
+inputs/*
 
 # Python specific
 *.venv

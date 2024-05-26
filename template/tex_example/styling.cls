@@ -1,12 +1,13 @@
 % Created by Murat Can Karacabey
-% this is inspired by Michael Pollind's Awesome CV
+% inspired by Michael Pollind's Awesome CV
+% this is inspired by Aaren Rice's CV
 % Created from scratch as a much simpler alternative to it to actually learn LaTeX.
 % Might be interpreted as an easier-to-edit or easier-to-understand-what-is-going-on version of it.
-\author{Murat Can Karacabey}
+\author{Murat Can Karacabey & Aaren Rice}
 \RequirePackage[dvipsnames]{xcolor} % moved here I guess article class causes option clash with xcolor if used after loading the class
 \LoadClass[11pt]{article}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{muratcan_cv}[2020/04/15 Muratcan CV Class]
+\ProvidesClass{styling}[2024/05/25 Rice CV Class]
 \RequirePackage[sfdefault]{noto}
 \RequirePackage{etoolbox}
 \RequirePackage{pgffor}
@@ -24,6 +25,9 @@
 
 \usepackage{comment}
 \usepackage{tabularx}
+\usepackage[overlay,absolute]{textpos}
+
+\let\clearpage\relax
 
 %Setup
 \newcommand*{\setname}[2]{\def\@firstname{#1}\def\@lastname{#2}}
@@ -36,21 +40,12 @@
 \newcommand*{\setlinkedinaccount}[1]{\def\@linkedinaccount{#1}}
 \newcommand*{\setgithubaccount}[1]{\def\@githubaccount{#1}}
 \newcommand*{\setyearsofexperience}[1]{\def\@yoe{#1}}
+\newcommand*{\setpostingurl}[2]{\def\@jobtitle{#1}\def\@postingurl{#2}}
 
 \hypersetup{
     colorlinks=true,
-    urlcolor=NavyBlue, % URL COLOR!
+    urlcolor=NavyBlue,
 }
-
-% Header
-% \newcommand\headerview{
-% \hfill
-% \begin{minipage}{0.55\linewidth} % extend header length here
-%     \center \name \\[0.05cm]
-%     \contact % address \ mobile \\ mail
-% \end{minipage}
-% \hfill
-% }
 
 \newcommand\headerview{
   \noindent\begin{tabularx}{\textwidth}{@{} X r @{}}
@@ -68,19 +63,16 @@
         \mail \\
     \end{tabular}
   \end{tabularx}
+  \begin{textblock*}{20mm}(177mm,21.5mm)
+    \postinglink
+  \end{textblock*}
 }
-
 
 \newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\githubview}{\href{\@githubaccount}{\faGithub\ \footnotesize github}}
-
-\newcommand{\name}{%
-    {\LARGE \color{\@themecolor} \@firstname \ \@lastname}
-}
-
-\newcommand{\contactinfo}{%
-  {\footnotesize \color{gray}{\faMapMarker\ \@address} \ \ {\faPhone\ \@mobile}}
-}
+\newcommand{\postinglink}{\href{\@postingurl}{\color{gray} \faLink\ \footnotesize posting}}
+\newcommand{\name}{{\LARGE \color{\@themecolor} \@firstname \ \@lastname}}
+\newcommand{\contactinfo}{{\footnotesize \color{gray}{\faMapMarker\ \@address} \ \ {\faPhone\ \@mobile}}}
 
 \newcommand{\yearsofexperience}{%
 {\footnotesize \@yoe \ years of experience}
@@ -89,15 +81,6 @@
 \newcommand{\mail}{%
   {\footnotesize \href{mailto:\@mail}{\@mail}}
 }
-
-\newcommand{\contact}{%
-        % {\small \@address  \cps \@citizenship \\ \@mobile \cps \@mail% %%OLD
-        {\small \@mail \ \cpshalf \@mobile %
-        \\%
-        \linkedinview \cpshalf \githubview \\
-        } %
-}
-
 
 % Helper commands
 \newcommand\ruleafter[1]{#1~{\color{black!60!\@themecolor}\hrulefill}} % a trick to put the line with <before> parameter in \titleformat

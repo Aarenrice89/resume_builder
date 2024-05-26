@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 
 from builder.sections import BaseTexDataClass
-from builder.utils.const import L1, L2
+from builder.utils.const import L1
+from builder.utils.formatting import handle_bulled_list
 
 
 @dataclass(kw_only=True)
@@ -19,17 +20,11 @@ class EducationDetail(BaseTexDataClass):
         return cls(**kwargs)
 
     def to_tex(self) -> str:
-        tex = f"{L1}%\n"
+        tex = ""
         tex += f"{L1}\\datedexperience{{{self.degree} - {self.field}}}{{{self.start_date} - {self.end_date}}}\n"
         tex += f"{L1}\\explanation{{{self.name}}}{{{self.location}}}\n"
         if self.highlights:
-            tex += f"{L1}\\explanationdetail{'{'}\n"
-            for highlight in self.highlights:
-                tex += f"{L2}\\smallskip\n"
-                tex += f"{L2}\\coloredbullet\\ %\n"
-                tex += f"{L2}{highlight}\n"
-            tex += f"{L2}\\smallskip\n"
-            tex += f"{L1}{'}'}\n"
+            tex += handle_bulled_list(self.highlights)
         tex += f"{L1}%\n"
         return tex
 

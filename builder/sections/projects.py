@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 from builder.sections import BaseTexDataClass
 from builder.utils.const import L1, L2
+from builder.utils.formatting import handle_bulled_list
 
 
 @dataclass(kw_only=True)
@@ -22,15 +23,7 @@ class ProjectDetail(BaseTexDataClass):
         tex += f"{L1}\\datedexperience{{{self.name}}}{{{self.start_date} - {self.end_date}}}\n"
         tex += f"{L1}\\explanation{{{self.role}}}{{{self.location}}}\n"
         if self.highlights:
-            tex += f"{L1}\\explanationdetail{'{'}\n"
-            tex += f"{L2}\\smallskip\n"
-            for highlight in self.highlights:
-                tex += f"{L2}\\coloredbullet\\ %\n"
-                tex += f"{L2}{highlight}\n"
-                tex += f"{L2}\\smallskip\n"
-                tex += f"\n"
-            tex += f"{L2}\\smallskip\n"
-            tex += f"{L1}{'}'}\n"
+            tex += handle_bulled_list(self.highlights)
         tex += f"{L1}%\n"
         return tex
 
